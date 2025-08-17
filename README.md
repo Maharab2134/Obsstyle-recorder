@@ -27,5 +27,3 @@ Clone this repository or download the source files.
 ### 3. Open the Dashboard
 
 Click the extension icon and open `dashboard.html` to access the recording dashboard.
-
-## File Structure
