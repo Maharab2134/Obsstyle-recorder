@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Full Page Screen Recorder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Live Preview -->
+        <div class="preview-area">
+            <video id="previewVideo" autoplay muted playsinline></video>
+            <div class="rec-indicator" id="recIndicator">● REC</div>
+        </div>
+
+        <!-- Controls Dock -->
+        <div class="controls-area">
+            <div class="settings">
+                <label>Resolution:
+                    <select id="resolution">
+                        <option value="1280x720">720p</option>
+                        <option value="1920x1080" selected>1080p</option>
+                        <option value="2560x1440">1440p</option>
+                    </select>
+                </label>
+                <label>FPS:
+                    <select id="fps">
+                        <option value="30" selected>30</option>
+                        <option value="60">60</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="timer" id="timerDisplay">00:00</div>
+
+            <div class="buttons">
+                <button id="startBtn" class="start-btn">Start</button>
+                <button id="pauseBtn" class="pause-btn" disabled>Pause</button>
+                <button id="resumeBtn" class="resume-btn" disabled>Resume</button>
+                <button id="stopBtn" class="stop-btn" disabled>Stop</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
